@@ -1,0 +1,24 @@
+development:
+  adapter: postgres
+  encoding: utf8
+  database: development_blog
+  hostname: localhost
+  username: blog
+  password: blog
+
+# Warning: The database defined as "debug" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+debug:
+  adapter: sqlite
+  database: db/debug_blog.db
+
+production:
+  adapter: 'postgres'
+  encoding: utf8
+  database: production_blog
+  hostname: localhost
+  username: blog
+  password: blog
+  reconnect: false
+  pool: 5
